@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import UserForm from "./components/UserForm/UserForm";
-import Users from "./components/Users/Users";
-import {UserClone} from "./types";
+import {useState} from 'react';
+import UserForm from './components/UserForm/UserForm';
+import Users from './components/Users/Users';
+import {UserClone} from './types';
 
 function App() {
   const [user, setUser] = useState<UserClone[]>([]);
@@ -18,7 +18,7 @@ function App() {
             <UserForm onSubmit={addUser}/>
           </div>
           <div className="col">
-            <Users  users={user}/>
+            <Users users={user}/>
           </div>
         </div>
       </main>
